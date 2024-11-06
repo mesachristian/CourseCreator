@@ -1,0 +1,21 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  coursecreator:
+    build:
+      context: "/Users/christianmesa/Desktop/azure/CourseCreator"
+      dockerfile: "CourseCreator/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/CourseCreator.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "coursecreator:dev"
+    ports: []
+    volumes:
+    - "/Users/christianmesa/.nuget/packages:/home/app/.nuget/packages"
+    - "/Users/christianmesa/Desktop/azure/CourseCreator/CourseCreator:/app:rw"
+    - "/Users/christianmesa/Desktop/azure/CourseCreator:/src:rw"
+    working_dir: "/app"

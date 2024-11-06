@@ -62,4 +62,5 @@ jobs:
           app-name: 'course-creator'
           slot-name: 'Production'
           package: .
+          app-settings: '{ "ConnectionStrings": { "PostgresConnection": "github actions conn"},}'
           

@@ -234,3 +234,4 @@
 /Users/christianmesa/Desktop/azure/CourseCreator/CourseCreator/bin/Debug/net8.0/App.config
 /Users/christianmesa/Desktop/azure/CourseCreator/CourseCreator/bin/Debug/net8.0/CourseCreator.dll.config
 /Users/christianmesa/Desktop/azure/CourseCreator/CourseCreator/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/christianmesa/Desktop/azure/CourseCreator/CourseCreator/obj/Debug/net8.0/CourseCreator.sourcelink.json

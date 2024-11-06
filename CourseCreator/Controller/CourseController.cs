@@ -11,10 +11,18 @@ namespace CourseCreator.Controller
     {
 
         private readonly ICourseRepository _courseRepository;
-
-        public CourseController(ICourseRepository courseRepository)
+        private readonly IConfiguration _configuration;
+        public CourseController(ICourseRepository courseRepository, IConfiguration configuration)
         {
             _courseRepository = courseRepository;
+            _configuration = configuration;
+        }
+
+        [HttpGet]
+        [Route("connString")]
+        public IActionResult GetConnectionString()
+        {
+            return Ok(_configuration.GetConnectionString("PostgresConnection"));
         }
         
         [HttpGet]
